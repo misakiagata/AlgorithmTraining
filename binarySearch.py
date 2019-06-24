@@ -1,5 +1,9 @@
+import listGenerator
+
+
 #二分探索
 def binarySearch(wordList,target):
+    print(wordList,target)
     if len(wordList) == 0: #リストの長さが0だった場合
         return False
     else:
@@ -20,6 +24,7 @@ def binarySearch(wordList,target):
 
 #二分探索(再帰)
 def recursiveBinarySearch(wordList,target):
+    print(wordList,target)
     if len(wordList) == 0:
         return False
     elif wordList[int(len(wordList)/2)] == target: #真ん中の値が探したい値と一致した場合
@@ -29,6 +34,5 @@ def recursiveBinarySearch(wordList,target):
     else:
         return binarySearch(wordList[int(len(wordList)/2):],target) #リストをスライスする際、[3:]とすると要素番号3~最後までが返る
 
-
-print(binarySearch([1,2,3,5,7,4],5))
-print(recursiveBinarySearch([1,2,3,5,7,4],1))
+print(binarySearch(listGenerator.generateList(10),5))
+print(recursiveBinarySearch(listGenerator.generateList(10),1))
