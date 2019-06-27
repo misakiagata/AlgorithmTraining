@@ -7,3 +7,5 @@
     :計算量O(logN)
 3. BubbleSort(バブルソート)
     :計算量O(n^2)
+4. QuickSort(クイックソート)
+    :計算量O(nlogn)
