@@ -16,4 +16,4 @@ def quickSort(sortList):
         return quickSort(left) + [pivot] + quickSort(right)
 
 
-print(quickSort(listGenerator.generateList(5)))
+print(quickSort(listGenerator.generateList(10)))

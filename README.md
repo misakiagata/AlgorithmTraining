@@ -9,3 +9,5 @@
     :計算量O(n^2)
 4. QuickSort(クイックソート)
     :計算量O(nlogn)
+5. MergeSort(マージソート)
+    :計算量O(nlogn)
