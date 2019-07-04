@@ -4,7 +4,6 @@
 def compression(word):
     word += '%' #ダミーの%を入力された文字列の最後に入れる
     compList = []
-    print(word)
     counter = 0
     index = 0
     while index < len(word)-1:
